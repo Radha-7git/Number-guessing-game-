@@ -13,7 +13,7 @@ A simple and interactive **Number Guessing Game** built with **HTML, Tailwind CS
 ## 📸 Screenshots
 | Game UI | 
 |---------|
-| ![Game UI](your_screenshot1.png) |
+| ![Game UI](tweepro.png) |
 
 
 ---
