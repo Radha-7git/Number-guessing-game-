@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-laxend: "Lexend Giga", "sans-serif";
+  --color-red-clr1: #ff4d6d;
+  --color-red-clr2: #ff758f;
+  --color-red-clr3: #ff8fa3;
+  --color-red-clr4: #c9184a;
+  --color-red-clr5: #ffccd5;
+  --color-red-clr6: #7d8597;
+}
+
+@layer utilities {
+  .rotate-y-360 {
+    transform: rotateY(360deg);
+  }
+}

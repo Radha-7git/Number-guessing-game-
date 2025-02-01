@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="build.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-red-clr1 font-laxend text-white min-h-screen flex items-center justify-center"
+  >
+    <div
+      class="w-full backdrop-blur-3xl max-w-[600px] rounded-2xl overflow-hidden"
+    >
+      <div class="bg-red-clr3 p-6">
+        <div class="flex items-center justify-between">
+          <button
+            id="reset"
+            aria-label="reset"
+            class="bg-red-clr1 py-2 px-4 cursor-pointer uppercase hover:bg-red-clr2 duration-300 ease-linear rounded-lg text-xs sm:text-md"
+          >
+            <i class="fa-solid fa-rotate-right"></i>
+            reset
+          </button>
+          <p class="uppercase text-xs sm:text-md sm:block hidden">
+            guess between <span class="text-red-clr4">1</span> and
+            <span class="text-red-clr4">100</span>
+          </p>
+        </div>
+        <div class="mt-8">
+          <h1 class="text-2xl uppercase text-center text-red-clr4">
+            number guessing game <i class="fa-solid fa-bullseye"></i>
+          </h1>
+          <p class="uppercase text-xs sm:text-md sm:hidden block mt-4 text-center">
+            guess between <span class="text-red-clr4">1</span> and
+            <span class="text-red-clr4">100</span>
+          </p>
+        </div>
+        <div class="flex justify-evenly items-center mt-8 text-center">
+          <p class="uppercase text-xs sm:text-md">
+            <i class="fa-solid fa-heart text-2xl text-red-clr4"></i>
+            chances<span id="score" class="block text-3xl text-red-clr4"></span>
+          </p>
+          <p class="uppercase text-xs sm:text-md">
+            high score <i class="fa-solid fa-medal text-2xl text-red-clr4"></i>
+            <span id="highscore" class="block text-3xl text-red-clr4"></span>
+          </p>
+        </div>
+        <div class="text-center">
+          <h2 id="message" class="mt-8 text-sm sm:text-md"></h2>
+          <p id="prevguess" class="mt-4 text-red-clr4 text-sm sm:text-xl"></p>
+        </div>
+        <div class="mt-8 text-center text-red-clr4 bg-red-clr1 p-2 rounded-lg">
+          <p id="trivia" class="text-white"></p>
+        </div>
+        <div class="sm:flex justify-between items-center">
+          <div class="mt-8">
+            <input
+              type="number"
+              placeholder="Enter a number"
+              required
+              class="uservalue border-4 p-2 border-red-clr1 bg-white block text-red-clr4 rounded-lg w-full sm:w-[320px]"
+            />
+            <button
+              id="guess"
+              class="bg-red-clr1 px-4 py-2 mt-4 uppercase cursor-pointer hover:bg-red-clr2 duration-300 ease-linear rounded-lg w-full"
+            >
+              <i class="fa-solid fa-question-circle"></i> guess
+            </button>
+          </div>
+          <div>
+            <div
+              class="custom-ani size-24 bg-red-clr1 py-6 px-12 transition-all duration-500 ease-linear rounded-lg sm:mt-0 mt-8 mx-auto"
+            >
+              <h2
+                id="find"
+                class="text-4xl font-bold flex justify-center items-center text-center"
+              ></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
